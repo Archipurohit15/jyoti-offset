@@ -1544,7 +1544,7 @@
 
   /* Hero */
   .hero { flex-direction: column; padding: 32px 16px; min-height: auto; }
-  .printer-img { display: none; }
+  /* .printer-img { display: none; } */
   .wave { display: none; }
   .hero-content { padding: 0; max-width: 100%; }
   .hero-content h1 { font-size: 34px; }
