@@ -1,0 +1,128 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- Hero -->
+<div class="contact-hero">
+  <div class="contact-hero-bg"></div>
+  <div class="contact-hero-content">
+    <div class="contact-breadcrumb">Home / <span>Contact</span></div>
+    <h1>Contact</h1>
+  </div>
+</div>
+
+<div class="cmyk-bar"></div>
+
+<!-- Main section -->
+<div class="contact-main">
+
+  <!-- Left info -->
+  <div class="contact-info">
+    <div class="contact-info-tag"> Contact Us</div>
+    <h2>Get in touch with<br/>
+      <span> Jyoti Offset </span>
+    </h2>
+    <p>Visit our press, give us a ring, or send us a message. We'd love to help with your next print job.</p>
+
+    <div class="info-item">
+      <div class="info-icon">📞</div>
+      <div>
+        <div class="info-label">Call Us</div>
+        <div class="info-value">+91 94142 69301</div>
+        <div class="info-value" style="font-weight:400;color:#888;font-size:12px;">+91 92140 69084</div>
+      </div>
+    </div>
+
+    <div class="info-item">
+      <div class="info-icon" >✉️</div>
+      <div>
+        <div class="info-label">Email</div>
+        <div class="info-value">jyotioffset03@gmail.com</div>
+      </div>
+    </div>
+
+    <div class="info-item">
+      <div class="info-icon" >📍</div>
+      <div>
+        <div class="info-label">Visit Us</div>
+        <div class="info-value">Jyoti Offset, Dhibba Para</div>
+        <div class="info-value" style="font-weight:400;color:#888;font-size:12px;">Near Salim Singh Haveli, Jaisalmer 345001</div>
+      </div>
+    </div>
+
+    <div class="info-item">
+      <div class="info-icon">🕐</div>
+      <div>
+        <div class="info-label">Working Hours</div>
+        <div class="info-value">Mon – Sat: 10 AM – 9 PM</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right form -->
+  <div class="contact-form">
+    <h3>Send us a message</h3>
+    <div class="form-row">
+      <div class="form-group">
+        <input type="text" id="name" placeholder="Your name"/>
+      </div>
+      <div class="form-group">
+        <input type="text" id="phone" placeholder="Phone number"/>
+      </div>
+    </div>
+    <div class="form-group">
+      <input type="email" id="email" placeholder="Email address"/>
+    </div>
+    <div class="form-group">
+      <input type="text" id="service" placeholder="What do you need printed?"/>
+    </div>
+    <div class="form-group">
+      <textarea id="message" placeholder="Write a message..."></textarea>
+    </div>
+    <button class="submit-btn" onclick="sendToWhatsApp()">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.118 1.531 5.845L.057 23.273a.5.5 0 00.671.632l5.701-1.877A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.947 0-3.764-.5-5.35-1.376l-.361-.207-3.735 1.23 1.137-3.643-.228-.374A9.944 9.944 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+      Send on WhatsApp
+    </button>
+  </div>
+
+</div>
+
+<!-- Map -->
+<div class="contact-map">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.6899511144893!2d70.91345017489505!3d26.913333360064872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3947bd7968cba611%3A0x2baec1036fb95b2a!2sJyoti%20offset!5e0!3m2!1sen!2sin!4v1784056035258!5m2!1sen!2sin"
+    width="100%"
+    height="320"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy">
+  </iframe>
+</div>
+
+<script>
+function sendToWhatsApp() {
+  const name = document.getElementById('name').value;
+  const phone = document.getElementById('phone').value;
+  const email = document.getElementById('email').value;
+  const service = document.getElementById('service').value;
+  const message = document.getElementById('message').value;
+
+  if (!name || !phone) {
+    alert('Please enter your name and phone number.');
+    return;
+  }
+
+  const text = `Hi Jyoti Offset! 👋
+
+*Name:* ${name}
+*Phone:* ${phone}
+*Email:* ${email}
+*Service needed:* ${service}
+*Message:* ${message}`;
+
+  window.open(`https://wa.me/919001479301?text=${encodeURIComponent(text)}`, '_blank');
+}
+</script>
+
+{% endblock %}

@@ -1,0 +1,223 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="hero">
+  <svg class="wave" viewBox="0 0 600 460" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,0 Q200,100 150,230 Q100,360 0,460 Z" fill="#1B9FAB" opacity="0.25"/>
+    <path d="M0,0 Q250,80 180,250 Q120,380 0,460 Z" fill="#C2185B" opacity="0.2" transform="translate(30,0)"/>
+    <path d="M0,0 Q280,60 200,270 Q140,400 0,460 Z" fill="#E8C400" opacity="0.25" transform="translate(60,0)"/>
+    <circle cx="310" cy="80" r="5" fill="#C2185B" opacity="0.5"/>
+    <circle cx="330" cy="140" r="3" fill="#E8C400" opacity="0.6"/>
+    <circle cx="295" cy="220" r="4" fill="#1B9FAB" opacity="0.4"/>
+    <circle cx="340" cy="320" r="5" fill="#C2185B" opacity="0.35"/>
+  </svg>
+
+  <img class="printer-img" src="{% static 'images/hero.jpg.png' %}" alt="Printing press"/>
+
+  <div class="hero-content">
+    <div class="hero-tag">Premium Offset Printing Solutions</div>
+    <h1>Every Print<br/><span class="pink">Tells a </span><span class="cyan">Story.</span></h1>
+    <div class="color-bars">
+      <div class="bar" style="background:#1B9FAB;"></div>
+      <div class="bar" style="background:#C2185B;"></div>
+      <div class="bar" style="background:#E8C400;"></div>
+      <div class="bar" style="background:#1A1A1A;"></div>
+    </div>
+    <p>From business cards and brochures to banners, packaging, and promotional materials, we bring your ideas to life with vibrant colors, exceptional quality, and precision you can trust.</p>
+    <div class="hero-btns">
+      <button class="btn-main" onclick="window.location.href='/quote'">Get a Quote →</button>
+      <button class="btn-sec" onclick="window.location.href='/services'">Explore Services →</button>
+    </div>
+    <div class="stats">
+      <div>
+        <div class="stat-num">1600<span>+</span></div>
+        <div class="stat-label">Projects delivered</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div>
+        <div class="stat-num">2000<span>+</span></div>
+        <div class="stat-label">Happy clients</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div>
+        <div class="stat-num">15<span>+</span></div>
+        <div class="stat-label">Years experience</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% comment %}  trust  {% endcomment %}
+<section class="trust-section">
+  <div class="trust-left">
+    <img src="{% static 'images/rajasthan.png' %}" alt="Govt of Rajasthan"/>
+  </div>
+
+  <div class="trust-divider"></div>
+
+  <div class="trust-right">
+    <div class="trust-tag">Official Recognition</div>
+    <h2>Trusted by the<br/><span>Government of Rajasthan</span></h2>
+    <p>Jyoti Offset has been an empanelled printing partner for government departments across Rajasthan, delivering official stationery, publications, and large-scale print orders with precision and reliability.</p>
+    <div class="trust-badge"> Government Empanelled Vendor</div>
+  </div>
+</section>
+
+
+{% comment %} services {% endcomment %}
+
+<section class="services-section">
+  <div class="services-header">
+    <h2>Services built for <span>every idea</span></h2>
+    <a class="view-all" href="{% url 'services' %}">View All →</a>
+  </div>
+
+  <div class="services-grid">
+
+    <div class="service-card">
+      <div class="card-img">
+        <img src="https://images.unsplash.com/photo-1586075010923-2dd4570fb338?w=400&auto=format&fit=crop" alt="Flex & Banners"/>
+      </div>
+      <div class="card-body">
+        <h3>Flex & Banners</h3>
+        <p>Indoor & outdoor large format printing for events and storefronts</p>
+        <div class="card-arrow">Know more →</div>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="card-img">
+        <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=400&auto=format&fit=crop" alt="Wedding Invitations"/>
+      </div>
+      <div class="card-body">
+        <h3>Wedding Invitations</h3>
+        <p>Elegant custom wedding cards, envelopes and gift inserts</p>
+        <div class="card-arrow">Know more →</div>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="card-img">
+        <img src="https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=400&auto=format&fit=crop" alt="T-Shirt Printing"/>
+      </div>
+      <div class="card-body">
+        <h3>T-Shirt Printing</h3>
+        <p>Custom screen & digital printing on apparel for teams and brands</p>
+        <div class="card-arrow">Know more →</div>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="card-img">
+        <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=400&auto=format&fit=crop" alt="Glow Boards"/>
+      </div>
+      <div class="card-body">
+        <h3>Glow Boards</h3>
+        <p>Backlit signage and glow boards for shops, clinics and showrooms</p>
+        <div class="card-arrow">Know more →</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- why choose us -->
+
+<section class="why-section">
+  <h2>Why choose <span>Jyoti Offset?</span> </h2>
+
+  <div class="why-list">
+    <div class="why-item">
+      <div class="check">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#1B9FAB" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <div class="why-text">
+        <h3>Colour-accurate printing</h3>
+        <p>Calibrated presses for true-to-design output every time.</p>
+      </div>
+    </div>
+
+    <div class="why-item">
+      <div class="check" style="border-color:#C2185B;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#C2185B" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <div class="why-text">
+        <h3>Lightning-fast turnaround</h3>
+        <p>Rush jobs delivered in as little as 48 hours.</p>
+      </div>
+    </div>
+
+    <div class="why-item">
+      <div class="check" style="border-color:#E8C400;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#E8C400" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <div class="why-text">
+        <h3>In-house design help</h3>
+        <p>Not print-ready? Our team fixes and prepares your files.</p>
+      </div>
+    </div>
+
+    <div class="why-item">
+      <div class="check">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#1B9FAB" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <div class="why-text">
+        <h3>Honest, upfront pricing</h3>
+        <p>Get a clear WhatsApp quote before we begin.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- next project  -->
+ 
+<section class="cta-section">
+  <div class="cta-left">
+    <div class="cta-tag">Let's print something amazing</div>
+    <h2>Ready to print<br/>your <span>next project?</span></h2>
+    <div class="cmyk-line">
+      <div class="cl" style="background:#1B9FAB;"></div>
+      <div class="cl" style="background:#E8C400;"></div>
+      <div class="cl" style="background:#fff;"></div>
+      <div class="cl" style="background:#1A1A1A;"></div>
+    </div>
+    <p>Share your requirements with us and get a quick, no-obligation quote on WhatsApp. Fast, friendly and reliable — that's how we print!</p>
+    <button class="whatsapp-btn" onclick="window.location.href='/quote'">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="#C2185B"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.118 1.531 5.845L.057 23.273a.5.5 0 00.671.632l5.701-1.877A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.947 0-3.764-.5-5.35-1.376l-.361-.207-3.735 1.23 1.137-3.643-.228-.374A9.944 9.944 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+      Get a Quote on WhatsApp
+    </button>
+  </div>
+
+  <div class="cta-right">
+    <div class="mockup-card card1">
+      <div style="position:absolute;top:16px;left:16px;display:flex;align-items:center;gap:8px;">
+        <svg width="20" height="20" viewBox="0 0 38 38"><circle cx="16" cy="16" r="13" fill="#1B9FAB" opacity="0.9"/><circle cx="24" cy="16" r="13" fill="#C2185B" opacity="0.8"/><circle cx="20" cy="23" r="13" fill="#E8C400" opacity="0.8"/></svg>
+        <div style="font-size:9px;color:#aaa;font-weight:400;">YOUR BRAND<br/>Tagline Here</div>
+      </div>
+      <div style="color:#fff;font-size:15px;font-weight:900;line-height:1.2;">BROCHURE<br/><span style="color:#C2185B;">DESIGN</span></div>
+    </div>
+
+    <div class="mockup-card card2">
+      <div style="color:#fff;font-size:15px;font-weight:900;line-height:1.2;">CREATIVE<br/>PRINT<br/><span style="color:#E8C400;">SOLUTIONS</span></div>
+      <div style="color:rgba(255,255,255,0.5);font-size:11px;margin-top:8px;">2025</div>
+    </div>
+
+    <div class="mockup-card card3">
+      <svg width="28" height="28" viewBox="0 0 38 38"><circle cx="16" cy="16" r="13" fill="#1B9FAB" opacity="0.9"/><circle cx="24" cy="16" r="13" fill="#C2185B" opacity="0.8"/><circle cx="20" cy="23" r="13" fill="#E8C400" opacity="0.8"/><circle cx="20" cy="18" r="5" fill="#1A1A1A" opacity="0.85"/></svg>
+      <div>
+        <div style="font-size:12px;font-weight:900;color:#1A1A1A;">JYOTI OFFSET</div>
+        <div style="font-size:10px;color:#888;font-weight:400;">Quality. Precision. Perfection.</div>
+      </div>
+    </div>
+
+    <div class="mockup-card card4">
+      <div style="color:#fff;font-size:22px;font-weight:900;">THANK<br/>YOU!</div>
+      <div style="color:rgba(255,255,255,0.7);font-size:10px;font-weight:400;margin-top:4px;">FOR YOUR BUSINESS</div>
+    </div>
+  </div>
+</section>
+
+
+{% endblock %}

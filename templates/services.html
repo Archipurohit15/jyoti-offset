@@ -1,0 +1,313 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- Hero -->
+<div class="page-hero">
+  <div class="blob-hero"></div>
+  <div class="hero-left">
+    <div class="hero-tag">What we offer</div>
+    <h1>
+  <span style="color:#1A1A1A;">Everything </span><span style="color:#E8C400;">you need,</span>
+  <span style="color:#C2185B;">printed under </span><span style="color:#1B9FAB;">one roof</span>
+</h1>
+    <div class="cmyk-line">
+      <div class="cl" style="background:#1B9FAB; "></div>
+      <div class="cl" style="background:#C2185B;"></div>
+      <div class="cl" style="background:#E8C400;"></div>
+      <div class="cl" style="background:#1A1A1A;"></div>
+    </div>
+    <p>From creative design to flawless printing, we provide a complete range of printing solutions for your business and personal needs.</p>
+  </div>
+  <div class="hero-right">
+    <img src="{% static 'images/hero.jpg.png' %}" alt="Printing press"/>
+  </div>
+</div>
+
+<!-- Services Grid -->
+<div class="services-section">
+  <div class="services-grid">
+
+    <div class="service-card" onclick="openModal('visiting')">
+      <div class="card-img">
+        <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=400&auto=format&fit=crop" alt="Visiting Cards"/>
+      </div>
+      <div class="card-body">
+        <h3>Visiting Cards</h3>
+        <p>Premium quality visiting cards that leave a lasting impression.</p>
+        <button class="learn-more">Know more →</button>
+      </div>
+    </div>
+
+    <div class="service-card" onclick="openModal('banners')">
+      <div class="card-img">
+        <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=400&auto=format&fit=crop" alt="Banners"/>
+      </div>
+      <div class="card-body">
+        <h3>Banners & Flex</h3>
+        <p>High quality flex printing for outdoor advertising and events.</p>
+        <button class="learn-more">Know more →</button>
+      </div>
+    </div>
+
+    <div class="service-card" onclick="openModal('wedding')">
+      <div class="card-img">
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=400&auto=format&fit=crop" alt="Wedding Invitations"/>
+      </div>
+      <div class="card-body">
+        <h3>Wedding Invitations</h3>
+        <p>Elegant and custom wedding cards that make every occasion special.</p>
+        <button class="learn-more">Know more →</button>
+      </div>
+    </div>
+
+    <div class="service-card" onclick="openModal('standees')">
+      <div class="card-img">
+        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&auto=format&fit=crop" alt="Standees"/>
+      </div>
+      <div class="card-body">
+        <h3>Standees & Brochures</h3>
+        <p>Eye-catching standees and brochures for your brand visibility.</p>
+        <button class="learn-more">Know more →</button>
+      </div>
+    </div>
+
+    <div class="service-card" onclick="openModal('glow')">
+      <div class="card-img">
+        <img src="https://images.unsplash.com/photo-1545431781-3e1b506e9a37?w=400&auto=format&fit=crop" alt="Glow Boards"/>
+      </div>
+      <div class="card-body">
+        <h3>Glow Boards</h3>
+        <p>Bright, attractive and durable glow boards that grab attention.</p>
+        <button class="learn-more">Know more →</button>
+      </div>
+    </div>
+
+    <div class="service-card" onclick="openModal('letterhead')">
+      <div class="card-img">
+        <img src="https://images.unsplash.com/photo-1568667256549-094345857637?w=400&auto=format&fit=crop" alt="Letterheads"/>
+      </div>
+      <div class="card-body">
+        <h3>Letterheads</h3>
+        <p>Professional letterheads that reflect your brand's identity.</p>
+        <button class="learn-more">Know more →</button>
+      </div>
+    </div>
+
+    <div class="service-card" onclick="openModal('registers')">
+      <div class="card-img">
+        <img src="https://images.unsplash.com/photo-1531346878377-a5be20888e57?w=400&auto=format&fit=crop" alt="Registers"/>
+      </div>
+      <div class="card-body">
+        <h3>Registers</h3>
+        <p>High quality registers for schools, offices and business use.</p>
+        <button class="learn-more">Know more →</button>
+      </div>
+    </div>
+
+    <div class="service-card" onclick="openModal('menu')">
+      <div class="card-img">
+        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&auto=format&fit=crop" alt="Hotel Menus"/>
+      </div>
+      <div class="card-body">
+        <h3>Hotel Menus</h3>
+        <p>Attractive and durable menus for a premium dining experience.</p>
+        <button class="learn-more">Know more →</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- how it works  -->
+
+<div class="hiw-section">
+  <h2>How it works</h2>
+  <div class="hiw-grid">
+
+    <div class="hiw-card">
+      <div class="hiw-num" style="color:#1B9FAB;">01</div>
+      <h3>Share your idea</h3>
+      <p>Send files or describe what you need via WhatsApp. No technical knowledge needed.</p>
+    </div>
+
+    <div class="hiw-card">
+      <div class="hiw-num" style="color:#C2185B;">02</div>
+      <h3>Get a quote</h3>
+      <p>We reply with clear pricing and timeline. No hidden charges, no surprises.</p>
+    </div>
+
+    <div class="hiw-card">
+      <div class="hiw-num" style="color:#E8C400;">03</div>
+      <h3>Proof & approve</h3>
+      <p>Review a digital proof before we print. We only proceed once you're happy.</p>
+    </div>
+
+    <div class="hiw-card">
+      <div class="hiw-num" style="color:#189c48;">04</div>
+      <h3>Print & deliver</h3>
+      <p>Pick up from our shop or get it delivered to your door. Fast and reliable.</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- CTA Strip -->
+<div style="background:#fff; padding: 40px 64px 56px;">
+  <div class="cta-strip">
+    <div>
+      <h3>Need Something <span>Custom Printed?</span></h3>
+      <p>Whether it's one piece or one lakh, we're ready to print it with perfection.</p>
+    </div>
+    <button class="cta-strip-btn">Get a Quote →</button>
+  </div>
+</div>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+  <div class="modal" id="modal">
+    <button class="modal-close" onclick="closeModalDirect()">✕</button>
+    <img id="modalImg" class="modal-img" src="" alt=""/>
+    <div class="modal-body">
+      <h2 id="modalTitle"></h2>
+      <p class="modal-desc" id="modalDesc"></p>
+      <div class="modal-details">
+        <div class="modal-detail-box">
+          <h4>Finishing Options</h4>
+          <ul id="modalFinishing"></ul>
+        </div>
+        <div class="modal-detail-box">
+          <h4>Available Sizes</h4>
+          <ul id="modalSizes"></ul>
+        </div>
+      </div>
+      <div class="modal-meta">
+        <div class="meta-item">
+          <div class="meta-label">Minimum Order</div>
+          <div class="meta-value" id="modalMinOrder"></div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Turnaround Time</div>
+          <div class="meta-value" id="modalTurnaround"></div>
+        </div>
+      </div>
+      <div class="modal-btns">
+        <button class="modal-btn-main" id="modalWhatsApp">Get a Quote on WhatsApp</button>
+        <button class="modal-btn-sec" onclick="closeModalDirect()">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const services = {
+  visiting: {
+    title: 'Visiting Cards',
+    desc: 'Premium quality visiting cards that leave a lasting impression on every client you meet.',
+    img: 'https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=700&auto=format&fit=crop',
+    finishing: ['Matte Finish', 'Glossy Finish', 'Velvet Lamination', 'Spot UV', 'Rounded Corners'],
+    sizes: ['3.5 x 2 inch', '3.5 x 2.17 inch', 'Custom Sizes'],
+    minOrder: '100 Cards',
+    turnaround: '1 – 2 Working Days',
+    whatsapp: 'Hi, I need a quote for Visiting Cards from Jyoti Offset.'
+  },
+  banners: {
+    title: 'Banners & Flex',
+    desc: 'High quality flex printing for outdoor advertising, events and promotions.',
+    img: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=700&auto=format&fit=crop',
+    finishing: ['Matte Lamination', 'Glossy Finish', 'Waterproof Ink', 'Reinforced Edges'],
+    sizes: ['2x4 ft', '3x6 ft', '4x8 ft', 'Custom Size'],
+    minOrder: '1 Piece',
+    turnaround: '1 – 3 Working Days',
+    whatsapp: 'Hi, I need a quote for Banners & Flex from Jyoti Offset.'
+  },
+  wedding: {
+    title: 'Wedding Invitations',
+    desc: 'Elegant and custom wedding cards that make every occasion special and memorable.',
+    img: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=700&auto=format&fit=crop',
+    finishing: ['Matte Finish', 'Gold Foiling', 'Embossing', 'Velvet Touch'],
+    sizes: ['A5', 'Square', 'Custom Size'],
+    minOrder: '50 Cards',
+    turnaround: '3 – 5 Working Days',
+    whatsapp: 'Hi, I need a quote for Wedding Invitations from Jyoti Offset.'
+  },
+  standees: {
+    title: 'Standees & Brochures',
+    desc: 'Eye-catching standees and multi-fold brochures for your brand visibility.',
+    img: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=700&auto=format&fit=crop',
+    finishing: ['Matte Lamination', 'Glossy Finish', 'Single/Double Sided'],
+    sizes: ['A4', 'A3', 'Custom Size'],
+    minOrder: '10 Pieces',
+    turnaround: '2 – 4 Working Days',
+    whatsapp: 'Hi, I need a quote for Standees & Brochures from Jyoti Offset.'
+  },
+  glow: {
+    title: 'Glow Boards',
+    desc: 'Bright, attractive and durable glow boards that grab attention for your shop or business.',
+    img: 'https://images.unsplash.com/photo-1545431781-3e1b506e9a37?w=700&auto=format&fit=crop',
+    finishing: ['LED Backlit', 'Acrylic Front', 'Aluminium Frame', 'Weatherproof'],
+    sizes: ['1x2 ft', '2x3 ft', '3x4 ft', 'Custom Size'],
+    minOrder: '1 Piece',
+    turnaround: '3 – 5 Working Days',
+    whatsapp: 'Hi, I need a quote for Glow Boards from Jyoti Offset.'
+  },
+  letterhead: {
+    title: 'Letterheads',
+    desc: 'Professional letterheads that reflect your brand identity for all official communication.',
+    img: 'https://images.unsplash.com/photo-1568667256549-094345857637?w=700&auto=format&fit=crop',
+    finishing: ['Matte Finish', 'Glossy Finish', 'Watermark'],
+    sizes: ['A4', 'Letter Size'],
+    minOrder: '100 Sheets',
+    turnaround: '2 – 3 Working Days',
+    whatsapp: 'Hi, I need a quote for Letterheads from Jyoti Offset.'
+  },
+  registers: {
+    title: 'Registers',
+    desc: 'High quality custom printed registers for schools, offices and business use.',
+    img: 'https://images.unsplash.com/photo-1531346878377-a5be20888e57?w=700&auto=format&fit=crop',
+    finishing: ['Hard Cover', 'Soft Cover', 'Spiral Bound', 'Stapled'],
+    sizes: ['A4', 'A5', 'Custom Size'],
+    minOrder: '25 Pieces',
+    turnaround: '3 – 5 Working Days',
+    whatsapp: 'Hi, I need a quote for Registers from Jyoti Offset.'
+  },
+  menu: {
+    title: 'Hotel Menus',
+    desc: 'Attractive and durable menus designed for a premium dining experience.',
+    img: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=700&auto=format&fit=crop',
+    finishing: ['Matte Lamination', 'Glossy Lamination', 'Waterproof', 'Spiral Bound'],
+    sizes: ['A4', 'A5', 'Custom Size'],
+    minOrder: '10 Pieces',
+    turnaround: '2 – 4 Working Days',
+    whatsapp: 'Hi, I need a quote for Hotel Menus from Jyoti Offset.'
+  }
+};
+
+function openModal(key) {
+  const s = services[key];
+  document.getElementById('modalTitle').textContent = s.title;
+  document.getElementById('modalDesc').textContent = s.desc;
+  document.getElementById('modalImg').src = s.img;
+  document.getElementById('modalMinOrder').textContent = s.minOrder;
+  document.getElementById('modalTurnaround').textContent = s.turnaround;
+  document.getElementById('modalFinishing').innerHTML = s.finishing.map(f => `<li>${f}</li>`).join('');
+  document.getElementById('modalSizes').innerHTML = s.sizes.map(sz => `<li>${sz}</li>`).join('');
+  document.getElementById('modalWhatsApp').onclick = () => {
+    window.open(`https://wa.me/919876543210?text=${encodeURIComponent(s.whatsapp)}`, '_blank');
+  };
+  document.getElementById('modalOverlay').classList.add('active');
+}
+
+function closeModal(e) {
+  if (e.target === document.getElementById('modalOverlay')) {
+    document.getElementById('modalOverlay').classList.remove('active');
+  }
+}
+
+function closeModalDirect() {
+  document.getElementById('modalOverlay').classList.remove('active');
+}
+</script>
+
+{% endblock %}

@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+  <div class="contact-hero">
+    <div class="contact-hero-tag">Contact</div>
+    <h1>Come say <span>hello.</span></h1>
+    <p>Visit our press, give us a ring, or drop a message — we'd love to help with your next print job.</p>
+  </div>
+
+  <div class="contact-cards">
+    <div class="cards-grid">
+
+      <div class="contact-card">
+        <div class="contact-card-label">Call Us</div>
+        <div class="contact-card-value" style="color:#1B9FAB;">
+            +91 94142 69301
+            <span> +91 9214069084</span>
+            </div>
+        <div class="contact-card-sub">Mon – Sat, 10 AM – 9 PM</div>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-card-label">Email</div>
+        <div class="contact-card-value" style="color:#C2185B;">jyotioffset03@gmail.com</div>
+        <div class="contact-card-sub">We reply within a few hours</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="contact-form-section">
+  <h2>Send a message</h2>
+  <div class="form-tag">AND WE'LL GET BACK TO YOU</div>
+  <div class="tag-underline"></div>
+
+  <form class="contact-form">
+    <div class="form-row">
+      <input type="text" placeholder="First Name" required>
+      <input type="text" placeholder="Last Name">
+    </div>
+
+    <div class="form-row single">
+      <input type="email" placeholder="Email" required>
+    </div>
+
+    <div class="form-row single">
+      <input type="text" placeholder="Subject">
+    </div>
+
+    <div class="form-row single">
+      <textarea placeholder="How can we help?" required></textarea>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+{% endblock %}
