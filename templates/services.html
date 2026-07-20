@@ -27,11 +27,12 @@
 
 <!-- Services Grid -->
 <div class="services-section">
+  <div class="service-txt">   <h1> What We Print - </h1>    </div>
   <div class="services-grid">
 
     <div class="service-card" onclick="openModal('visiting')">
       <div class="card-img">
-        <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=400&auto=format&fit=crop" alt="Visiting Cards"/>
+        <img src="{% static '/images/visiting.jpg' %}" alt="Visiting Cards"/>
       </div>
       <div class="card-body">
         <h3>Visiting Cards</h3>
@@ -42,7 +43,7 @@
 
     <div class="service-card" onclick="openModal('banners')">
       <div class="card-img">
-        <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=400&auto=format&fit=crop" alt="Banners"/>
+        <img src="{% static '/images/banner.avif' %}" alt="Banners"/>
       </div>
       <div class="card-body">
         <h3>Banners & Flex</h3>
@@ -53,7 +54,7 @@
 
     <div class="service-card" onclick="openModal('wedding')">
       <div class="card-img">
-        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=400&auto=format&fit=crop" alt="Wedding Invitations"/>
+        <img src="{% static '/images/patrika.jpg' %}" alt="Wedding Invitations"/>
       </div>
       <div class="card-body">
         <h3>Wedding Invitations</h3>
@@ -64,7 +65,7 @@
 
     <div class="service-card" onclick="openModal('standees')">
       <div class="card-img">
-        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&auto=format&fit=crop" alt="Standees"/>
+        <img src="{% static '/images/standees.avif' %}" alt="Standees"/>
       </div>
       <div class="card-body">
         <h3>Standees & Brochures</h3>
@@ -75,7 +76,7 @@
 
     <div class="service-card" onclick="openModal('glow')">
       <div class="card-img">
-        <img src="https://images.unsplash.com/photo-1545431781-3e1b506e9a37?w=400&auto=format&fit=crop" alt="Glow Boards"/>
+        <img src="{% static '/images/glow board.png' %}" alt="Glow Boards"/>
       </div>
       <div class="card-body">
         <h3>Glow Boards</h3>
@@ -86,7 +87,7 @@
 
     <div class="service-card" onclick="openModal('letterhead')">
       <div class="card-img">
-        <img src="https://images.unsplash.com/photo-1568667256549-094345857637?w=400&auto=format&fit=crop" alt="Letterheads"/>
+        <img src="{% static '/images/letterhead.jpg' %}" alt="Letterheads"/>
       </div>
       <div class="card-body">
         <h3>Letterheads</h3>
@@ -97,7 +98,7 @@
 
     <div class="service-card" onclick="openModal('registers')">
       <div class="card-img">
-        <img src="https://images.unsplash.com/photo-1531346878377-a5be20888e57?w=400&auto=format&fit=crop" alt="Registers"/>
+        <img src="{% static '/images/registers.avif' %}" alt="Registers"/>
       </div>
       <div class="card-body">
         <h3>Registers</h3>
@@ -108,7 +109,7 @@
 
     <div class="service-card" onclick="openModal('menu')">
       <div class="card-img">
-        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&auto=format&fit=crop" alt="Hotel Menus"/>
+        <img src="{% static '/images/menus.avif' %}" alt="Hotel Menus"/>
       </div>
       <div class="card-body">
         <h3>Hotel Menus</h3>
@@ -205,7 +206,7 @@ const services = {
   visiting: {
     title: 'Visiting Cards',
     desc: 'Premium quality visiting cards that leave a lasting impression on every client you meet.',
-    img: 'https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=700&auto=format&fit=crop',
+    img:'{% static "images/visiting.jpg" %}',
     finishing: ['Matte Finish', 'Glossy Finish', 'Velvet Lamination', 'Spot UV', 'Rounded Corners'],
     sizes: ['3.5 x 2 inch', '3.5 x 2.17 inch', 'Custom Sizes'],
     minOrder: '100 Cards',
@@ -215,7 +216,7 @@ const services = {
   banners: {
     title: 'Banners & Flex',
     desc: 'High quality flex printing for outdoor advertising, events and promotions.',
-    img: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=700&auto=format&fit=crop',
+    img:'{% static "images/banner.avif" %}',
     finishing: ['Matte Lamination', 'Glossy Finish', 'Waterproof Ink', 'Reinforced Edges'],
     sizes: ['2x4 ft', '3x6 ft', '4x8 ft', 'Custom Size'],
     minOrder: '1 Piece',
@@ -225,7 +226,7 @@ const services = {
   wedding: {
     title: 'Wedding Invitations',
     desc: 'Elegant and custom wedding cards that make every occasion special and memorable.',
-    img: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=700&auto=format&fit=crop',
+    img:'{% static "images/patrika.jpg" %}',
     finishing: ['Matte Finish', 'Gold Foiling', 'Embossing', 'Velvet Touch'],
     sizes: ['A5', 'Square', 'Custom Size'],
     minOrder: '50 Cards',
@@ -235,7 +236,7 @@ const services = {
   standees: {
     title: 'Standees & Brochures',
     desc: 'Eye-catching standees and multi-fold brochures for your brand visibility.',
-    img: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=700&auto=format&fit=crop',
+    img:'{% static "images/standeeee.jpg" %}',
     finishing: ['Matte Lamination', 'Glossy Finish', 'Single/Double Sided'],
     sizes: ['A4', 'A3', 'Custom Size'],
     minOrder: '10 Pieces',
@@ -245,7 +246,7 @@ const services = {
   glow: {
     title: 'Glow Boards',
     desc: 'Bright, attractive and durable glow boards that grab attention for your shop or business.',
-    img: 'https://images.unsplash.com/photo-1545431781-3e1b506e9a37?w=700&auto=format&fit=crop',
+    img:'{% static "images/glow board.png" %}',
     finishing: ['LED Backlit', 'Acrylic Front', 'Aluminium Frame', 'Weatherproof'],
     sizes: ['1x2 ft', '2x3 ft', '3x4 ft', 'Custom Size'],
     minOrder: '1 Piece',
@@ -255,7 +256,7 @@ const services = {
   letterhead: {
     title: 'Letterheads',
     desc: 'Professional letterheads that reflect your brand identity for all official communication.',
-    img: 'https://images.unsplash.com/photo-1568667256549-094345857637?w=700&auto=format&fit=crop',
+    img:'{% static "images/letterhead.jpg" %}',
     finishing: ['Matte Finish', 'Glossy Finish', 'Watermark'],
     sizes: ['A4', 'Letter Size'],
     minOrder: '100 Sheets',
@@ -265,7 +266,7 @@ const services = {
   registers: {
     title: 'Registers',
     desc: 'High quality custom printed registers for schools, offices and business use.',
-    img: 'https://images.unsplash.com/photo-1531346878377-a5be20888e57?w=700&auto=format&fit=crop',
+    img:'{% static "images/registers.avif" %}',
     finishing: ['Hard Cover', 'Soft Cover', 'Spiral Bound', 'Stapled'],
     sizes: ['A4', 'A5', 'Custom Size'],
     minOrder: '25 Pieces',
@@ -275,7 +276,7 @@ const services = {
   menu: {
     title: 'Hotel Menus',
     desc: 'Attractive and durable menus designed for a premium dining experience.',
-    img: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=700&auto=format&fit=crop',
+    img:'{% static "images/menus.avif" %}',
     finishing: ['Matte Lamination', 'Glossy Lamination', 'Waterproof', 'Spiral Bound'],
     sizes: ['A4', 'A5', 'Custom Size'],
     minOrder: '10 Pieces',

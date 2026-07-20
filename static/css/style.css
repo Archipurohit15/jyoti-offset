@@ -356,7 +356,7 @@
 .card-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit:cover;
 }
 
 .card-body {
@@ -376,7 +376,8 @@
   line-height: 1.5;
 }
 
-.card-arrow {
+.card-arrow a{
+  text-decoration: none;
   margin-top: 12px;
   font-size: 13px;
   font-weight: 600;
@@ -809,6 +810,12 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.service-txt h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color:#C2185B;
+  padding: 0 10px 40px 20px ;
 }
 
 .card-img {
@@ -1283,7 +1290,8 @@
   margin-bottom: 3px;
 }
 
-.info-value {
+.info-value a {
+  text-decoration: none;
   font-size: 14px;
   font-weight: 600;
   font-family: Arial, Helvetica, sans-serif;
@@ -1544,8 +1552,42 @@
 
   /* Hero */
   .hero { flex-direction: column; padding: 32px 16px; min-height: auto; }
-  /* .printer-img { display: none; } */
-  .wave { display: none; }
+  .printer-img {size: 20px;}
+  /* .wave {display:none} */
+
+
+
+  .wave {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 10%;
+  height: 90%;
+  z-index: 1;
+}
+
+.printer-img {
+  position: absolute;
+  right: 0;
+  top: 60px;
+  width:65%;
+  height: 50%;
+  object-fit: cover;
+  object-position:right;
+  z-index: 2;
+  mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.4) 25%, black 50%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.4) 25%, black 80%);
+}
+
+.hero-content p{
+  max-width:290px;
+  background-color: #fff;
+}
+
+
+
+
+
   .hero-content { padding: 0; max-width: 100%; }
   .hero-content h1 { font-size: 34px; }
   .hero-btns { flex-direction: column; gap: 10px; }

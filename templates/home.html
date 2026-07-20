@@ -42,7 +42,7 @@
       </div>
       <div class="stat-divider"></div>
       <div>
-        <div class="stat-num">15<span>+</span></div>
+        <div class="stat-num">31<span>+</span></div>
         <div class="stat-label">Years experience</div>
       </div>
     </div>
@@ -78,23 +78,27 @@
 
     <div class="service-card">
       <div class="card-img">
-        <img src="https://images.unsplash.com/photo-1586075010923-2dd4570fb338?w=400&auto=format&fit=crop" alt="Flex & Banners"/>
+        <img src="{% static 'images/banner.avif' %}" alt="Flex & Banners"/>
       </div>
       <div class="card-body">
         <h3>Flex & Banners</h3>
         <p>Indoor & outdoor large format printing for events and storefronts</p>
-        <div class="card-arrow">Know more →</div>
+        <div class="card-arrow">
+          <a href="{% url 'services' %}"> Know more → </a>
+        </div>
       </div>
     </div>
 
     <div class="service-card">
       <div class="card-img">
-        <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=400&auto=format&fit=crop" alt="Wedding Invitations"/>
+        <img src="{% static 'images/patrika.jpg' %}" alt="Wedding Invitations"/>
       </div>
       <div class="card-body">
         <h3>Wedding Invitations</h3>
         <p>Elegant custom wedding cards, envelopes and gift inserts</p>
-        <div class="card-arrow">Know more →</div>
+        <div class="card-arrow">
+            <a href="{% url 'services' %}"> Know more → </a>
+        </div>
       </div>
     </div>
 
@@ -105,18 +109,18 @@
       <div class="card-body">
         <h3>T-Shirt Printing</h3>
         <p>Custom screen & digital printing on apparel for teams and brands</p>
-        <div class="card-arrow">Know more →</div>
+        <div class="card-arrow">   <a href="{% url 'services' %}"> Know more → </a></div>
       </div>
     </div>
 
     <div class="service-card">
       <div class="card-img">
-        <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=400&auto=format&fit=crop" alt="Glow Boards"/>
+        <img src="{% static 'images/glow board.png' %}" alt="Glow Boards"/>
       </div>
       <div class="card-body">
         <h3>Glow Boards</h3>
         <p>Backlit signage and glow boards for shops, clinics and showrooms</p>
-        <div class="card-arrow">Know more →</div>
+        <div class="card-arrow">  <a href="{% url 'services' %}"> Know more → </a></div>
       </div>
     </div>
 
