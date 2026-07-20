@@ -1255,10 +1255,10 @@
 .contact-hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('https://images.unsplash.com/photo-1562654501-a0ccc0fc3fb1?w=1200&auto=format&fit=crop');
+  background-image:url('/static/images/contact.jpg');
   background-size: cover;
   background-position: center;
-  filter: brightness(0.4);
+  filter: brightness(0.2);
 }
 
 .contact-hero-content {
@@ -1621,7 +1621,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  width: 10%;
+  width: 60%;
   height: 90%;
   z-index: 1;
 }
@@ -1631,17 +1631,19 @@
   right: 0;
   top: 60px;
   width:65%;
-  height: 50%;
+  height: 60%;
   object-fit: cover;
   object-position:right;
   z-index: 2;
+  opacity:0.5;
   mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.4) 25%, black 50%);
   -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.4) 25%, black 80%);
 }
 
 .hero-content p{
   max-width:290px;
-  background-color: #fff;
+  /* background-color: rgba(255,255,255,0.4); */
+
 }
 
 
